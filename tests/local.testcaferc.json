@@ -1,0 +1,11 @@
+{
+    "browsers": "chrome:headless",
+    "src": [
+        "/Users/binxmac/Documents/TestCafe/tests/02_US/001_US_Home.js",
+        "/Users/binxmac/Documents/TestCafe/tests/02_US/007_US_Login.js",
+        "/Users/binxmac/Documents/TestCafe/tests/02_US/008_US_Footer.js",
+        "/Users/binxmac/Documents/TestCafe/tests/02_US/009_US_CV19_Home.js"
+    ]
+    
+    
+}

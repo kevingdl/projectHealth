@@ -1,0 +1,42 @@
+{
+  "dependencies": {
+    "colors": "^1.4.0",
+    "testcafe": "^1.18.3",
+    "testcafe-browser-provider-browserstack": "^1.13.2-alpha.1",
+    "testcafe-reporter-teamcity": "^1.0.12"
+  },
+  "scripts": {
+    "E2E01": "testcafe chrome ./tests/01_E2E/001_CV19.js --hostname localhost",
+    "E2E022": "testcafe chrome:headless ./tests/01_E2E/007_ODX_binxboxes.js --hostname localhost",
+    "E2E02": "testcafe chrome:headless ./tests/01_E2E/008_ODX_PrePaid_Kits.js --hostname localhost",
+    "E2E03": "testcafe chrome ./tests/01_E2E/009_STI.js --hostname localhost",
+    "E2E04": "testcafe chrome:headless ./tests/01_E2E/010_Reject.js --hostname localhost",
+    "E2E05": "testcafe chrome:headless ./tests/01_E2E/011_Cancel.js --hostname localhost",
+    "Ins01": "testcafe chrome ./tests/09_Insurance/001_PrEP_Insurance.js --hostname localhost",
+    "Web01": "testcafe chrome:headless ./tests/02_US/001_US_Home.js --hostname localhost",
+    "Web02": "testcafe chrome:headless ./tests/02_US/002_US_FindMyTest.js --hostname localhost",
+    "Web03": "testcafe chrome:headless ./tests/02_US/003_US_BinxBoxes.js --hostname localhost",
+    "Web04": "testcafe chrome:headless ./tests/02_US/004_US_ActivateBox.js --hostname localhost",
+    "Web05": "testcafe chrome:headless ./tests/02_US/005_US_Upload_RT.js --hostname localhost",
+    "Web06": "testcafe chrome:headless ./tests/02_US/006_US_Upload_CV_Vx.js --hostname localhost",
+    "Web07": "testcafe chrome:headless ./tests/02_US/007_US_Login.js --hostname localhost",
+    "Web08": "testcafe chrome:headless ./tests/02_US/008_US_Footer.js --hostname localhost",
+    "Web09": "testcafe chrome:headless ./tests/02_US/009_US_CV19_Home.js --hostname localhost",
+    "Web10": "testcafe chrome:headless ./tests/02_US/010_US_CV19_Questionnaire.js --hostname localhost",
+    "Web11": "testcafe chrome:headless ./tests/02_US/011_US_CV19_Personal.js --hostname localhost",
+    "Web12": "testcafe chrome:headless ./tests/02_US/012_US_CV19_Address.js --hostname localhost",
+    "Web13": "testcafe chrome:headless ./tests/02_US/013_US_CV19_Payment.js --hostname localhost",
+    "Web14": "testcafe chrome:headless ./tests/02_US/014_US_CV19_Review.js --hostname localhost",
+    "Binx1": "npm run Web01 && npm run Web02 && npm run Web03 && npm run Web04",
+    "Binx2": "npm run Web05 && npm run Web06 && npm run Web07 && npm run Web08",
+    "Binx3": "npm run Web09 && npm run Web10 && npm run Web11 && npm run Web12 && npm run Web13 && npm run Web14",
+    "All-Part2": "npm run Web5 && npm run Web6 && npm run Web7 && npm run Web8 && npm run Web9 && npm run Web10",
+    "All-Web": "npm run Web01 && npm run Web02 && npm run Web03 && npm run Web04 && npm run Web05 && npm run Web06 && npm run Web07 && npm run Web08 && npm run Web09 && npm run Web10 && npm run Web11 && npm run Web12 && npm run Web13 && npm run Web14",
+    "All-Web2": "npm run Web11 && npm run Web12 && npm run Web13 && npm run Web14",
+    "F-Web": "testcafe chrome:headless ./tests/02_US/*.js",
+    "F-CV19": "npm run Web9 && npm run Web10",
+    "F1": "testcafe chrome:headless ./tests/02_US/*.jss",
+    "F2": "testcafe chrome:headless ./tests/03_CV19/*.jss",
+    "F12": "npm run F1 && npm run F2"
+  }
+}

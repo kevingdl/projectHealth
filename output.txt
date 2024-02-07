@@ -1,0 +1,247 @@
+ Running tests in:
+ - Chrome 102.0.5005.61 / macOS 10.15.7
+
+ US STAGE MYBINXHEALTH.COM
+ ✓ APP US - Navigation Menu - Binx Logo - Logout
+ ✓ APP US - Navigation Menu - How It Works - Logout
+ ✓ APP US - Navigation Menu - Find My Test - Logout
+ ✓ APP US - Navigation Menu - Binx Boxes - Logout
+ ✓ APP US - Navigation Menu - Activate Box - Logout
+ ✓ APP US - Navigation Menu - Upload - Logout
+ ✓ APP US - Navigation Menu - Rapid Test - Logout
+ ✓ APP US - Navigation Menu - Covid Vaccination - Logout
+ ✓ APP US - Navigation Menu - Login - Logout
+ ✓ APP US - Navigation Menu - Cart Icon - Logout
+ ✓ APP US - CV19 Banner
+ ✓ APP US - Test Easy Header
+ ✓ APP US - Content - Test Easy Paragraph
+ ✓ APP US - Content - Test Easy Image Exists
+ ✓ APP US - Content - Test Easy Find Your Test Button Exists
+ ✓ APP US - Content - How It Works Header
+ ✓ APP US - Content - Find Your Test Header
+ ✓ APP US - Content - Find Your Test Text
+ ✓ APP US - Content - Receive Your Box Header
+ ✓ APP US - Content - Receive Your Box Text
+ ✓ APP US - Content - Get Results Header
+ ✓ APP US - Content - Get Results Text
+ ✓ APP US - Content - Benefits
+ ✓ APP US - Content - Anytime
+ ✓ APP US - Content - Anytime Text
+ ✓ APP US - Content - Private
+ ✓ APP US - Content - Private Text
+ ✓ APP US - Content - Medically
+ ✓ APP US - Content - Medically Text
+ ✓ APP US - Content - Not Sure
+ ✓ APP US - Content - Not Sure Text
+ ✓ APP US - Content - Find My Test Button
+
+ FIND MY TEST
+ ✖ APP US - Find My Test Clinician Image
+
+   1) AssertionError: expected false to be truthy
+
+      Browser: Chrome 102.0.5005.61 / macOS 10.15.7
+
+         25 |test('APP US - Find My Test Click', async t => {
+         26 |  await t.click(page.FindMyTestButton)
+         27 |});
+         28 |*/
+         29 |test('APP US - Find My Test Clinician Image', async t => {
+       > 30 |  await t.expect(page.CliniciansImg.exists).ok()
+         31 |});
+         32 |test('APP US - Find My Test Header', async t => {
+         33 |  await t.expect(page.H1FindMyTest.innerText).eql('Find my
+      test')
+         34 |});
+         35 |test('APP US - Find My Test Text 1', async t => {
+
+         at <anonymous>
+
+   (/Users/binxmac/Documents/TestCafe/tests/02_US/002_US_FindMyTest.js:30:45)
+         at asyncGeneratorStep
+
+   (/Users/binxmac/Documents/TestCafe/tests/02_US/002_US_FindMyTest.js:6:250)
+         at _next
+
+   (/Users/binxmac/Documents/TestCafe/tests/02_US/002_US_FindMyTest.js:6:588)
+         at <anonymous>
+
+   (/Users/binxmac/Documents/TestCafe/tests/02_US/002_US_FindMyTest.js:6:753)
+         at <anonymous>
+
+   (/Users/binxmac/Documents/TestCafe/tests/02_US/002_US_FindMyTest.js:6:494)
+         at <anonymous>
+      (/Users/binxmac/Documents/TestCafe/tests/02_US/002_US_FindMyTest.js:29:5)
+
+
+ ✖ APP US - Find My Test Header
+
+   1) Cannot obtain information about the node because the specified
+      selector does not match any node in the DOM tree.
+
+         | Selector('span')
+       > |   .withExactText('Find my test')
+
+      Browser: Chrome 102.0.5005.61 / macOS 10.15.7
+
+         28 |*/
+         29 |test('APP US - Find My Test Clinician Image', async t => {
+         30 |  await t.expect(page.CliniciansImg.exists).ok()
+         31 |});
+         32 |test('APP US - Find My Test Header', async t => {
+       > 33 |  await t.expect(page.H1FindMyTest.innerText).eql('Find my
+      test')
+         34 |});
+         35 |test('APP US - Find My Test Text 1', async t => {
+         36 |  await t.expect(page.FindMyTestText1.innerText).eql('We\'re
+      going to ask about your sex life.')
+         37 |});
+         38 |test('APP US - Find My Test Text 2', async t => {
+
+         at <anonymous>
+
+   (/Users/binxmac/Documents/TestCafe/tests/02_US/002_US_FindMyTest.js:33:47)
+         at asyncGeneratorStep
+
+   (/Users/binxmac/Documents/TestCafe/tests/02_US/002_US_FindMyTest.js:6:250)
+         at _next
+
+   (/Users/binxmac/Documents/TestCafe/tests/02_US/002_US_FindMyTest.js:6:588)
+         at <anonymous>
+
+   (/Users/binxmac/Documents/TestCafe/tests/02_US/002_US_FindMyTest.js:6:753)
+         at <anonymous>
+
+   (/Users/binxmac/Documents/TestCafe/tests/02_US/002_US_FindMyTest.js:6:494)
+         at <anonymous>
+      (/Users/binxmac/Documents/TestCafe/tests/02_US/002_US_FindMyTest.js:32:5)
+
+
+ ✖ APP US - Find My Test Text 1
+
+   1) Cannot obtain information about the node because the specified
+      selector does not match any node in the DOM tree.
+
+         | Selector('#app > main > div > div > p')
+       > |   .nth(0)
+
+      Browser: Chrome 102.0.5005.61 / macOS 10.15.7
+
+         31 |});
+         32 |test('APP US - Find My Test Header', async t => {
+         33 |  await t.expect(page.H1FindMyTest.innerText).eql('Find my
+      test')
+         34 |});
+         35 |test('APP US - Find My Test Text 1', async t => {
+       > 36 |  await t.expect(page.FindMyTestText1.innerText).eql('We\'re
+      going to ask about your sex life.')
+         37 |});
+         38 |test('APP US - Find My Test Text 2', async t => {
+         39 |  await t.expect(page.FindMyTestText2.innerText).eql('We know
+      that can be a sensitive subject, but we promise we won\'t share your
+      answers with anyone. We need this information so we can suggest the
+      right test for you.')
+         40 |});
+         41 |test('APP US - Get Started Button', async t => {
+
+         at <anonymous>
+
+   (/Users/binxmac/Documents/TestCafe/tests/02_US/002_US_FindMyTest.js:36:50)
+         at asyncGeneratorStep
+
+   (/Users/binxmac/Documents/TestCafe/tests/02_US/002_US_FindMyTest.js:6:250)
+         at _next
+
+   (/Users/binxmac/Documents/TestCafe/tests/02_US/002_US_FindMyTest.js:6:588)
+         at <anonymous>
+
+   (/Users/binxmac/Documents/TestCafe/tests/02_US/002_US_FindMyTest.js:6:753)
+         at <anonymous>
+
+   (/Users/binxmac/Documents/TestCafe/tests/02_US/002_US_FindMyTest.js:6:494)
+         at <anonymous>
+      (/Users/binxmac/Documents/TestCafe/tests/02_US/002_US_FindMyTest.js:35:5)
+
+
+ ✖ APP US - Find My Test Text 2
+
+   1) Cannot obtain information about the node because the specified
+      selector does not match any node in the DOM tree.
+
+         | Selector('#app > main > div > div > p')
+       > |   .nth(1)
+
+      Browser: Chrome 102.0.5005.61 / macOS 10.15.7
+
+         34 |});
+         35 |test('APP US - Find My Test Text 1', async t => {
+         36 |  await t.expect(page.FindMyTestText1.innerText).eql('We\'re
+      going to ask about your sex life.')
+         37 |});
+         38 |test('APP US - Find My Test Text 2', async t => {
+       > 39 |  await t.expect(page.FindMyTestText2.innerText).eql('We know
+      that can be a sensitive subject, but we promise we won\'t share your
+      answers with anyone. We need this information so we can suggest the
+      right test for you.')
+         40 |});
+         41 |test('APP US - Get Started Button', async t => {
+         42 |  await t.expect(page.GetStartedButton.exists).ok()
+         43 |});
+
+         at <anonymous>
+
+   (/Users/binxmac/Documents/TestCafe/tests/02_US/002_US_FindMyTest.js:39:50)
+         at asyncGeneratorStep
+
+   (/Users/binxmac/Documents/TestCafe/tests/02_US/002_US_FindMyTest.js:6:250)
+         at _next
+
+   (/Users/binxmac/Documents/TestCafe/tests/02_US/002_US_FindMyTest.js:6:588)
+         at <anonymous>
+
+   (/Users/binxmac/Documents/TestCafe/tests/02_US/002_US_FindMyTest.js:6:753)
+         at <anonymous>
+
+   (/Users/binxmac/Documents/TestCafe/tests/02_US/002_US_FindMyTest.js:6:494)
+         at <anonymous>
+      (/Users/binxmac/Documents/TestCafe/tests/02_US/002_US_FindMyTest.js:38:5)
+
+
+ ✖ APP US - Get Started Button
+
+   1) AssertionError: expected false to be truthy
+
+      Browser: Chrome 102.0.5005.61 / macOS 10.15.7
+
+         37 |});
+         38 |test('APP US - Find My Test Text 2', async t => {
+         39 |  await t.expect(page.FindMyTestText2.innerText).eql('We know
+      that can be a sensitive subject, but we promise we won\'t share your
+      answers with anyone. We need this information so we can suggest the
+      right test for you.')
+         40 |});
+         41 |test('APP US - Get Started Button', async t => {
+       > 42 |  await t.expect(page.GetStartedButton.exists).ok()
+         43 |});
+
+         at <anonymous>
+
+   (/Users/binxmac/Documents/TestCafe/tests/02_US/002_US_FindMyTest.js:42:48)
+         at asyncGeneratorStep
+
+   (/Users/binxmac/Documents/TestCafe/tests/02_US/002_US_FindMyTest.js:6:250)
+         at _next
+
+   (/Users/binxmac/Documents/TestCafe/tests/02_US/002_US_FindMyTest.js:6:588)
+         at <anonymous>
+
+   (/Users/binxmac/Documents/TestCafe/tests/02_US/002_US_FindMyTest.js:6:753)
+         at <anonymous>
+
+   (/Users/binxmac/Documents/TestCafe/tests/02_US/002_US_FindMyTest.js:6:494)
+         at <anonymous>
+      (/Users/binxmac/Documents/TestCafe/tests/02_US/002_US_FindMyTest.js:41:5)
+
+
+
+ 5/37 failed (47s)
